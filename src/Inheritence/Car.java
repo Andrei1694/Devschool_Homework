@@ -1,6 +1,7 @@
 package Inheritence;
 
 public class Car extends Vehicle {
+
     void changingGears(int gear){
         this.currentGear = gear;
     }
