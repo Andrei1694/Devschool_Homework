@@ -2,12 +2,19 @@ package Inheritence;
 
 public class Car extends Vehicle {
 
+    public Car(){
+        this.setHandSteering(true);
+        this.setCurrentGear(1);
+        this.setCurrentSpeed(5);
+        System.out.println("The car started.");
+    }
+
     void changingGears(int gear){
-        this.currentGear = gear;
+        this.setCurrentGear(gear);
     }
 
     void increseSpeed(int newSpeed){
-        switch (currentSpeed){
+        switch (this.getCurrentSpeed()){
             case 30: this.changingGears(2);
                 break;
             case 50: this.changingGears(3);
@@ -17,14 +24,14 @@ public class Car extends Vehicle {
             case 100: this.changingGears(5);
                 break;
         }
-        this.currentSpeed += newSpeed;
+        this.setCurrentSpeed(this.getCurrentSpeed() + newSpeed);
     }
 
     void decreseSpeed(int newSpeed){
-        this.currentSpeed -= newSpeed;
+        this.setCurrentSpeed(this.getCurrentSpeed() - newSpeed);
     }
 
     void move(){
-        System.out.println("You're moving with the currentSpeed of "+this.currentSpeed);
+        System.out.println("You're moving with the currentSpeed of "+this.getCurrentSpeed());
     }
 }

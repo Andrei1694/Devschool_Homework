@@ -5,11 +5,6 @@ public class Vehicle {
     private int currentGear;
     private boolean handSteering;
 
-    void startVehicle(){
-        this.setCurrentGear(1);
-        this.setCurrentSpeed(5);
-    }
-
     public int getCurrentSpeed() {
         return currentSpeed;
     }
