@@ -1,9 +1,9 @@
 package BarkingDog;
 
 public class Dog {
-    public boolean bark(boolean barking, int hour) {
+    public boolean bark(boolean barking, int hourOfDay) {
         if (barking) {
-            if (hour < 8 || hour > 23)
+            if (hourOfDay < 8 || hourOfDay > 23)
                 return true;
         }
         return false;
