@@ -1,5 +1,6 @@
 import BurgerApp.Addition;
 import BurgerApp.BasicBurger;
+import BurgerApp.HealthyBurger;
 
 
 public class Main {
@@ -19,20 +20,22 @@ public class Main {
 ////        System.out.println(equalSumChecker.hasEqualsSum(1,1,2));
 ////        System.out.println(equalSumChecker.hasEqualsSum(1,-1,0));
 //
-//        Calculator c = new Calculator();
+//          Calculator c = new Calculator();
 ////        c.printYearsAbdDays(525600 );
 ////        c.printYearsAbdDays(1051200);
 ////        c.printYearsAbdDays(561600);
-//        c.printYearsAbdDays(525600);
-//        c.printYearsAbdDays(1051200);
-//        c.printYearsAbdDays(561600);
+//          c.printYearsAbdDays(525600);
+//          c.printYearsAbdDays(1051200);
+//          c.printYearsAbdDays(561600);
 
         BasicBurger b1 = new BasicBurger("alba", "vita", 2.4f);
-        b1.addAddition(new Addition(Addition.AdditionName.LETTUCE));
-        b1.addAddition(new Addition(Addition.AdditionName.TOMATO));
-        b1.addAddition(new Addition(Addition.AdditionName.ONION));
-        b1.addAddition(new Addition(Addition.AdditionName.OREGANO));
-        b1.addAddition(new Addition(Addition.AdditionName.CARROT));
+        HealthyBurger b2 = new HealthyBurger("rosie", "vita", 3);
+        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
+        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
+        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
+        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
+        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
+        b2.showTotalPrice();
         b1.showTotalPrice();
     }
 }
