@@ -1,4 +1,4 @@
-package MinutesToYears;
+package Tema1.MinutesToYears;
 
 public class Calculator {
     public void printYearsAbdDays(int minutes) {

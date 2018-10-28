@@ -1,4 +1,4 @@
-package BarkingDog;
+package Tema1.BarkingDog;
 
 public class Dog {
     public boolean bark(boolean barking, int hourOfDay) {

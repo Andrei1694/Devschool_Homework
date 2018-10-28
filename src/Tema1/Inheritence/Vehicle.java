@@ -1,4 +1,4 @@
-package Inheritence;
+package Tema1.Inheritence;
 
 public class Vehicle {
     private int currentSpeed;

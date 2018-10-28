@@ -1,4 +1,4 @@
-package EqualSumChecker;
+package Tema1.EqualSumChecker;
 
 public class EqualSumChecker {
     public boolean hasEqualsSum(int a, int b, int c) {
