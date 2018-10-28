@@ -1,5 +1,6 @@
 import BurgerApp.Addition;
 import BurgerApp.BasicBurger;
+import BurgerApp.DeluxeHamburger;
 import BurgerApp.HealthyBurger;
 
 
@@ -28,14 +29,13 @@ public class Main {
 //          c.printYearsAbdDays(1051200);
 //          c.printYearsAbdDays(561600);
 
-        BasicBurger b1 = new BasicBurger("alba", "vita", 2.4f);
-        HealthyBurger b2 = new HealthyBurger("rosie", "vita", 3);
-        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
-        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
-        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
-        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
-        b2.addAddition(new Addition(Addition.AdditionName.GARLIC));
-        b2.showTotalPrice();
+        HealthyBurger b1 = new HealthyBurger("vita", 4.1f, new Addition("CARROT"), new Addition("TOMATO"));
+        b1.addAddition(new Addition("CHIPS"));
+        b1.addAddition(new Addition("CHIPS"));
+        b1.addAddition(new Addition("CHIPS"));
+        b1.addAddition(new Addition("CHIPS"));
+        b1.addAddition(new Addition("CHIPS"));
+//        b1.addAddition(new Addition("CHIPS"));
         b1.showTotalPrice();
     }
 }
