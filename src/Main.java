@@ -1,4 +1,6 @@
-import Tema1.MinutesToYears.Calculator;
+import BurgerApp.Addition;
+import BurgerApp.BasicBurger;
+
 
 public class Main {
 
@@ -25,6 +27,12 @@ public class Main {
 //        c.printYearsAbdDays(1051200);
 //        c.printYearsAbdDays(561600);
 
-
+        BasicBurger b1 = new BasicBurger("alba", "vita", 2.4f);
+        b1.addAddition(new Addition(Addition.AdditionName.LETTUCE));
+        b1.addAddition(new Addition(Addition.AdditionName.TOMATO));
+        b1.addAddition(new Addition(Addition.AdditionName.ONION));
+        b1.addAddition(new Addition(Addition.AdditionName.OREGANO));
+        b1.addAddition(new Addition(Addition.AdditionName.CARROT));
+        b1.showTotalPrice();
     }
 }
