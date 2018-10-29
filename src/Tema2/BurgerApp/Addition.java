@@ -1,4 +1,4 @@
-package BurgerApp;
+package Tema2.BurgerApp;
 
 public class Addition {
 

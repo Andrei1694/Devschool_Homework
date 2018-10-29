@@ -1,4 +1,4 @@
-package Composition;
+package Tema2.Composition;
 
 public interface Room {
     int calculateArea(int width, int length);

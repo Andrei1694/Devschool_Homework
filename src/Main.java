@@ -1,9 +1,3 @@
-import BurgerApp.Addition;
-import BurgerApp.BasicBurger;
-import BurgerApp.DeluxeHamburger;
-import BurgerApp.HealthyBurger;
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -29,13 +23,6 @@ public class Main {
 //          c.printYearsAbdDays(1051200);
 //          c.printYearsAbdDays(561600);
 
-        HealthyBurger b1 = new HealthyBurger("vita", 4.1f, new Addition("CARROT"), new Addition("TOMATO"));
-        b1.addAddition(new Addition("CHIPS"));
-        b1.addAddition(new Addition("CHIPS"));
-        b1.addAddition(new Addition("CHIPS"));
-        b1.addAddition(new Addition("CHIPS"));
-        b1.addAddition(new Addition("CHIPS"));
-//        b1.addAddition(new Addition("CHIPS"));
-        b1.showTotalPrice();
+
     }
 }

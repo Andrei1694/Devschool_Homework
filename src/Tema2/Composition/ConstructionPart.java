@@ -1,4 +1,4 @@
-package Composition;
+package Tema2.Composition;
 
 public class ConstructionPart {
     private String name;
