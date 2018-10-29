@@ -1,3 +1,7 @@
+import Tema2.Polymorphism.Car;
+import Tema2.Polymorphism.Fiat;
+import Tema2.Polymorphism.Opel;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -23,6 +27,11 @@ public class Main {
 //          c.printYearsAbdDays(1051200);
 //          c.printYearsAbdDays(561600);
 
+        //Tema2
 
+        Car car1 = new Fiat(4, "Punto");
+        car1.getName();
+        Car car2 = new Opel(3, "Vectra");
+        car2.getName();
     }
 }
